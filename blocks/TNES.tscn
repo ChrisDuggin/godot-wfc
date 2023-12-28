@@ -1,0 +1,9 @@
+[gd_scene load_steps=3 format=3 uid="uid://bhiy328vf6v2e"]
+
+[ext_resource type="Script" path="res://blocks/block.gd" id="1_r0nty"]
+[ext_resource type="PackedScene" uid="uid://de34ssdf1n3j8" path="res://assets/models/blocks/T.glb" id="2_nkgfk"]
+
+[node name="T" type="Node3D"]
+script = ExtResource("1_r0nty")
+
+[node name="T2" parent="." instance=ExtResource("2_nkgfk")]

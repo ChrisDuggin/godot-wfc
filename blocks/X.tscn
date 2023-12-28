@@ -1,0 +1,12 @@
+[gd_scene load_steps=3 format=3 uid="uid://b4vnwi1shysgs"]
+
+[ext_resource type="PackedScene" uid="uid://cdw3xedfbjdlo" path="res://assets/models/blocks/X.glb" id="1_0g77b"]
+[ext_resource type="Script" path="res://blocks/block.gd" id="1_vk132"]
+
+[node name="X" type="Node3D"]
+script = ExtResource("1_vk132")
+
+[node name="X2" parent="." instance=ExtResource("1_0g77b")]
+
+[node name="SpotLight3D" type="SpotLight3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 1)

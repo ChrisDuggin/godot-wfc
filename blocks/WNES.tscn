@@ -1,0 +1,9 @@
+[gd_scene load_steps=3 format=3 uid="uid://b0co3hgs2y4n8"]
+
+[ext_resource type="Script" path="res://blocks/block.gd" id="1_s5f00"]
+[ext_resource type="PackedScene" uid="uid://bb7wtpnf7b5m8" path="res://assets/models/blocks/W.glb" id="2_xav4k"]
+
+[node name="W" type="Node3D"]
+script = ExtResource("1_s5f00")
+
+[node name="W2" parent="." instance=ExtResource("2_xav4k")]

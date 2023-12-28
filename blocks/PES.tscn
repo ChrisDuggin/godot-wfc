@@ -1,0 +1,10 @@
+[gd_scene load_steps=3 format=3 uid="uid://c30pdidde5ak0"]
+
+[ext_resource type="Script" path="res://blocks/block.gd" id="1_8h3bw"]
+[ext_resource type="PackedScene" uid="uid://bv4hqk872g2aq" path="res://assets/models/blocks/P.glb" id="2_tyckm"]
+
+[node name="P" type="Node3D"]
+script = ExtResource("1_8h3bw")
+
+[node name="P2" parent="." instance=ExtResource("2_tyckm")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 0, 0, 0)
