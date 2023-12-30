@@ -4,7 +4,8 @@
 [ext_resource type="PackedScene" uid="uid://bv4hqk872g2aq" path="res://assets/models/blocks/P.glb" id="2_pacwk"]
 
 [node name="P" type="Node3D"]
+transform = Transform3D(-2.12556e-07, 0, 1, 0, 1, 0, -1, 0, -2.27453e-07, 0, 0, 0)
 script = ExtResource("1_x1p5d")
 
-[node name="P2" parent="." instance=ExtResource("2_pacwk")]
-transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 0, 0, 0)
+[node name="block" parent="." instance=ExtResource("2_pacwk")]
+transform = Transform3D(1, 0, 1.74846e-07, 0, 1, 0, -1.74846e-07, 0, 1, 0, 0, 0)

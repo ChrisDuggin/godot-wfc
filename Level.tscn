@@ -1,12 +1,26 @@
-[gd_scene load_steps=2 format=3 uid="uid://cu1mhnhrj8jl0"]
+[gd_scene load_steps=4 format=3 uid="uid://cu1mhnhrj8jl0"]
 
+[ext_resource type="Script" path="res://blocks/block.gd" id="1_0ssoq"]
 [ext_resource type="Script" path="res://Level.gd" id="8_r6d3a"]
 
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_e6avc"]
+albedo_color = Color(1, 0, 0.215686, 1)
+
 [node name="Node3D" type="Node3D"]
+script = ExtResource("1_0ssoq")
 
 [node name="Level" type="Node3D" parent="."]
 script = ExtResource("8_r6d3a")
 
-[node name="Camera3D" type="Camera3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 0.5, 0.866025, 0, -0.866025, 0.5, 6, 10, 11)
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="Level"]
+transform = Transform3D(1, 0, 0, 0, 0.965926, 0.258819, 0, -0.258819, 0.965926, 0, 88, 12)
+
+[node name="Camera3D" type="Camera3D" parent="." groups=["camera"]]
+transform = Transform3D(-4.37114e-08, 1, 4.37114e-08, -1.5246e-23, -4.37114e-08, 1, 1, 4.37114e-08, 1.91069e-15, 2.08165e-12, 9, 2.08165e-12)
 current = true
+fov = 80.0
+size = 10.0
+
+[node name="CSGSphere3D" type="CSGSphere3D" parent="Camera3D"]
+transform = Transform3D(-4.37114e-08, 7.89265e-25, 1, 1, -4.37114e-08, 4.37114e-08, 4.37114e-08, 1, 1.91069e-15, 4, 8, -4)
+material = SubResource("StandardMaterial3D_e6avc")

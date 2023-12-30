@@ -1,70 +1,67 @@
 const blocks = {
-
-    'INS': {
-		'resource': 'res://blocks/INS.tscn',
-		'paths': {
-			'n': true,
-			'e': false,
-			's': true,
-			'w': false,
-		},
-	},		
-    'IEW': {
-		'resource': 'res://blocks/IEW.tscn',
-		'paths': {
-			'n': false,
-			'e': true,
-			's': false,
-			'w': true,
-		},
-	},		
-
-
-	'LES': {
-		'resource': 'res://blocks/LES.tscn',
-		'paths': {
-			'n': false,
-			'e': true,
-			's': true,
-			'w': false,
-		},
-	},		
-	'LNE': {
-		'resource': 'res://blocks/LNE.tscn',
-		'paths': {
-			'n': true,
-			'e': true,
-			's': false,
-			'w': false,
-		},
-	},	
-	'LNW': {
-		'resource': 'res://blocks/LNW.tscn',
-		'paths': {
-			'n': true,
-			'e': false,
-			's': false,
-			'w': true,
-		},
-	},	
-	'LSW': {
-		'resource': 'res://blocks/LSW.tscn',
-		'paths': {
-			'n': false,
-			'e': false,
-			's': true,
-			'w': true,
-		},
-	},			
-    'O': {
-		'resource': 'res://blocks/O.tscn',
-		'paths': {
-			'n': true,
-			'e': true,
-			's': true,
-			'w': true,
-		},
-	},	
+    // 'INS': {
+	// 	'resource': 'res://blocks/INS.tscn',
+	// 	'paths': {
+	// 		'n': true,
+	// 		'e': false,
+	// 		's': true,
+	// 		'w': false,
+	// 	},
+	// },		
+    // 'IEW': {
+	// 	'resource': 'res://blocks/IEW.tscn',
+	// 	'paths': {
+	// 		'n': false,
+	// 		'e': true,
+	// 		's': false,
+	// 		'w': true,
+	// 	},
+	// },		
+	// 'LES': {
+	// 	'resource': 'res://blocks/LES.tscn',
+	// 	'paths': {
+	// 		'n': false,
+	// 		'e': true,
+	// 		's': true,
+	// 		'w': false,
+	// 	},
+	// },		
+	// 'LNE': {
+	// 	'resource': 'res://blocks/LNE.tscn',
+	// 	'paths': {
+	// 		'n': true,
+	// 		'e': true,
+	// 		's': false,
+	// 		'w': false,
+	// 	},
+	// },	
+	// 'LNW': {
+	// 	'resource': 'res://blocks/LNW.tscn',
+	// 	'paths': {
+	// 		'n': true,
+	// 		'e': false,
+	// 		's': false,
+	// 		'w': true,
+	// 	},
+	// },	
+	// 'LSW': {
+	// 	'resource': 'res://blocks/LSW.tscn',
+	// 	'paths': {
+	// 		'n': false,
+	// 		'e': false,
+	// 		's': true,
+	// 		'w': true,
+	// 	},
+	// },			
+    // 'O': {
+	// 	'resource': 'res://blocks/O.tscn',
+	// 	'paths': {
+	// 		'n': true,
+	// 		'e': true,
+	// 		's': true,
+	// 		'w': true,
+	// 	},
+	// },	
     'PES': {
 		'resource': 'res://blocks/PES.tscn',
 		'paths': {
@@ -101,79 +98,79 @@ const blocks = {
 			'w': true,
 		},
 	},		
-    'TESW': {
-		'resource': 'res://blocks/TESW.tscn',
-		'paths': {
-			'n': false,
-			'e': true,
-			's': true,
-			'w': true,
-		},
-	},	
-    'TNES': {
-		'resource': 'res://blocks/TNES.tscn',
-		'paths': {
-			'n': true,
-			'e': true,
-			's': true,
-			'w': false,
-		},
-	},	
-    'TNEW': {
-		'resource': 'res://blocks/TNEW.tscn',
-		'paths': {
-			'n': true,
-			'e': true,
-			's': false,
-			'w': true,
-		},
-	},	
-    'TNSW': {
-		'resource': 'res://blocks/TNSW.tscn',
-		'paths': {
-			'n': true,
-			'e': false,
-			's': true,
-			'w': true,
-		},
-	},	
+    // 'TESW': {
+	// 	'resource': 'res://blocks/TESW.tscn',
+	// 	'paths': {
+	// 		'n': false,
+	// 		'e': true,
+	// 		's': true,
+	// 		'w': true,
+	// 	},
+	// },	
+    // 'TNES': {
+	// 	'resource': 'res://blocks/TNES.tscn',
+	// 	'paths': {
+	// 		'n': true,
+	// 		'e': true,
+	// 		's': true,
+	// 		'w': false,
+	// 	},
+	// },	
+    // 'TNEW': {
+	// 	'resource': 'res://blocks/TNEW.tscn',
+	// 	'paths': {
+	// 		'n': true,
+	// 		'e': true,
+	// 		's': false,
+	// 		'w': true,
+	// 	},
+	// },	
+    // 'TNSW': {
+	// 	'resource': 'res://blocks/TNSW.tscn',
+	// 	'paths': {
+	// 		'n': true,
+	// 		'e': false,
+	// 		's': true,
+	// 		'w': true,
+	// 	},
+	// },	
 
-    'WESW': {
-		'resource': 'res://blocks/WESW.tscn',
-		'paths': {
-			'n': false,
-			'e': true,
-			's': true,
-			'w': true,
-		},
-	},	
-    'WNES': {
-		'resource': 'res://blocks/WNES.tscn',
-		'paths': {
-			'n': true,
-			'e': true,
-			's': true,
-			'w': false,
-		},
-	},	
-    'WNEW': {
-		'resource': 'res://blocks/WNEW.tscn',
-		'paths': {
-			'n': true,
-			'e': true,
-			's': false,
-			'w': true,
-		},
-	},	
-    'WNSW': {
-		'resource': 'res://blocks/WNSW.tscn',
-		'paths': {
-			'n': true,
-			'e': false,
-			's': true,
-			'w': true,
-		},
-	},	
+    // 'WESW': {
+	// 	'resource': 'res://blocks/WESW.tscn',
+	// 	'paths': {
+	// 		'n': false,
+	// 		'e': true,
+	// 		's': true,
+	// 		'w': true,
+	// 	},
+	// },	
+    // 'WNES': {
+	// 	'resource': 'res://blocks/WNES.tscn',
+	// 	'paths': {
+	// 		'n': true,
+	// 		'e': true,
+	// 		's': true,
+	// 		'w': false,
+	// 	},
+	// },	
+    // 'WNEW': {
+	// 	'resource': 'res://blocks/WNEW.tscn',
+	// 	'paths': {
+	// 		'n': true,
+	// 		'e': true,
+	// 		's': false,
+	// 		'w': true,
+	// 	},
+	// },	
+    // 'WNSW': {
+	// 	'resource': 'res://blocks/WNSW.tscn',
+	// 	'paths': {
+	// 		'n': true,
+	// 		'e': false,
+	// 		's': true,
+	// 		'w': true,
+	// 	},
+	// },	
     'X': {
 		'resource': 'res://blocks/X.tscn',
 		'paths': {
@@ -208,7 +205,6 @@ Object.keys(blocks).forEach((val)=>{
         }
         
     })
-    
 })
 
 console.log(JSON.stringify(blocks, undefined, 4))

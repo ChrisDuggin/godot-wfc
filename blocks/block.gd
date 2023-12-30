@@ -1,23 +1,30 @@
 extends Node3D
+var label3d
+var camera
 
-var nTiles = []
-var eTiles = []
-var sTiles = []
-var wTiles = []
+var entropy: int
+var col: int
+var row: int
+var key: String
 
-var nPath = false
-var ePath = false
-var sPath = false
-var wPath = false
+var collapsed = false
 
-# Called when the node enters the scene tree for the first time.
 func _ready():
+	label3d = Label3D.new() # Create a new Sprite2D.
+	label3d.position.y = 1.25
+	label3d.font_size = 50
+	add_child(label3d) # Add it as a child of this node.
 	
-	pass
-
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta):
-	pass
+	if collapsed:
+		label3d.text = key
 
-
-
+	camera = get_tree().get_nodes_in_group("camera")
+	if camera:
+		label3d.rotation = camera[0].rotation
+	
+func removePlaceholder():
+	#$".".print_tree_pretty()
+	$block.queue_free()
+	

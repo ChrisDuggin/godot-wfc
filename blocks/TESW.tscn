@@ -6,5 +6,5 @@
 [node name="T" type="Node3D"]
 script = ExtResource("1_huwhh")
 
-[node name="T2" parent="." instance=ExtResource("2_hwf7b")]
-transform = Transform3D(1.31134e-07, 0, 1, 0, 1, 0, -1, 0, 1.31134e-07, 0, 0, 0)
+[node name="block" parent="." instance=ExtResource("2_hwf7b")]
+transform = Transform3D(1, 0, -1.74846e-07, 0, 1, 0, 1.74846e-07, 0, 1, 0, 0, 0)
